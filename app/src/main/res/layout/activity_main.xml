@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.gauth.android_processingjsondata.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/searchWeather"
+        android:layout_alignStart="@+id/searchWeather"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:id="@+id/city"
+        android:hint="City" />
+
+    <TextView
+        android:text="Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/country"
+        android:layout_toLeftOf="@+id/searchWeather"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/main"
+        android:layout_alignLeft="@+id/temperature"
+        android:layout_alignStart="@+id/temperature" />
+
+    <TextView
+        android:text="Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main"
+        android:layout_toLeftOf="@+id/city"
+        android:layout_toStartOf="@+id/city"
+        android:id="@+id/description" />
+
+    <TextView
+        android:text="Temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_alignRight="@+id/description"
+        android:layout_alignEnd="@+id/description"
+        android:layout_marginTop="17dp"
+        android:id="@+id/temperature" />
+
+    <TextView
+        android:text="Pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temperature"
+        android:layout_alignRight="@+id/main"
+        android:layout_alignEnd="@+id/main"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pressure" />
+
+    <TextView
+        android:text="Humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pressure"
+        android:layout_alignRight="@+id/pressure"
+        android:layout_alignEnd="@+id/pressure"
+        android:layout_marginTop="18dp"
+        android:id="@+id/humidity" />
+
+    <TextView
+        android:text="TempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/humidity"
+        android:layout_alignLeft="@+id/humidity"
+        android:layout_alignStart="@+id/humidity"
+        android:layout_marginTop="23dp"
+        android:id="@+id/tempMin" />
+
+    <TextView
+        android:text="TempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempMin"
+        android:layout_alignLeft="@+id/tempMin"
+        android:layout_alignStart="@+id/tempMin"
+        android:layout_marginTop="17dp"
+        android:id="@+id/tempMax" />
+
+    <Button
+        android:text="Check Weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchWeather"
+        android:onClick="checkWeather"
+        android:layout_below="@+id/tempMax"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/country"
+        android:hint="Country"
+        android:layout_below="@+id/city"
+        android:layout_alignLeft="@+id/pressure"
+        android:layout_alignStart="@+id/pressure" />
+
+</RelativeLayout>
